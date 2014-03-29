@@ -1,0 +1,29 @@
+{
+  "name": "bacon-test",
+  "version": "0.0.0",
+  "description": "testing with bacon",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/bovard/bacon-test.git"
+  },
+  "keywords": [
+    "roguelike"
+  ],
+  "author": "Bovard Tiberi <bovard.tiberi@gmail.com> (http://github.com/bovard)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bovard/bacon-test/issues"
+  },
+  "homepage": "https://github.com/bovard/bacon-test",
+  "devDependencies": {
+    "tiny-lr": "0.0.5",
+    "gulp-concat": "~2.1.7",
+    "gulp-livereload": "~1.2.0",
+    "gulp-styl": "~0.2.0",
+    "gulp-browserify": "~0.5.0",
+    "gulp": "~3.5.5",
+    "baconjs": "~0.7.2"
+  }
+}
