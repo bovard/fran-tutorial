@@ -1,6 +1,6 @@
 # fran tutorial
 
-I'm implementing the fran tutorial in whichever reactive functional javascript frameworks suite my fancy.
+I'm implementing the [fran tutorial](http://conal.net/fran/tutorial.htm) in whichever reactive functional javascript frameworks suite my fancy.
 
 Right now I plan to look at:
 
