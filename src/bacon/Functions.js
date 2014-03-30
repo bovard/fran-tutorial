@@ -1,16 +1,17 @@
 
 var TimeStream = require('./TimeStream');
+var PERIOD = .5;
 
 function add(x, y) {
     return x + y;
 }
 
 var wiggle = TimeStream.timeStream.map(function(x) {
-    return Math.sin(x);
+    return PERIOD * Math.sin(x);
 });
 
 var waggle = TimeStream.timeStream.map(function(x) {
-    return Math.cos(x);
+    return PERIOD * Math.cos(x);
 });
 
 module.exports = {

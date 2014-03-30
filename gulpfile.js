@@ -7,7 +7,8 @@ var lr = require('tiny-lr');
 var server = lr();
 
 var paths = {
-    main: ['src/main.js']
+    main: ['src/main.js'],
+    bacon: ['src/bacon/bacon.js']
 };
 
 gulp.task('scripts', function() {  
@@ -23,6 +24,22 @@ gulp.task('scripts', function() {
         .pipe(concat('baconTest.js'))
         .pipe(gulp.dest('build'))
         .pipe(refresh(server))
+});
+
+gulp.task('bacon', function() {
+    gulp.src(paths.bacon)
+        .pipe(browserify({
+            shim: {
+                jquery: {
+                    path: 'lib/jquery-1.11.0.min.js',
+                    exports: '$'
+                }
+            }
+        }))
+        .pipe(concat('baconTest.js'))
+        .pipe(gulp.dest('build'))
+        .pipe(refresh(server))
+
 });
 
 gulp.task('styles', function() {  

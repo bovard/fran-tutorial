@@ -1,6 +1,6 @@
-var bacon = require('bacon');
+var bacon = require('baconjs');
 
-var timeStream = bacon.interval(10).map(function() {
+var timeStream = bacon.interval(100).map(function() {
     return new Date().getTime() % 100;
 });
 
