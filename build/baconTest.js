@@ -2936,7 +2936,7 @@ module.exports=require('qMGCc3');
 
 var TimeStream = require('./TimeStream');
 var AMPLITUDE = 100;
-var PERIOD = 1000;
+var PERIOD = 250;
 
 function add(x, y) {
     return x + y;
@@ -2982,7 +2982,7 @@ function addXMotionToDiv(x, $div) {
 
 
 function addYMotionToDiv(y, $div) {
-    _addMotionToDiv(y, $div, LEFT);
+    _addMotionToDiv(y, $div, TOP);
 }
 
 module.exports = {
@@ -3006,9 +3006,7 @@ var Functions = require('./Functions');
 var Motions = require('./Motions');
 
 $(function() {
-    var leftRight = $("#leftRight");
-    Motions.addXMotionToDiv(Functions.waggle, leftRight);
-
-
+    Motions.addXMotionToDiv(Functions.waggle, $(".leftRightWiggle"));
+    Motions.addYMotionToDiv(Functions.wiggle, $(".upDownWaggle"));
 });
 },{"./Functions":4,"./Motions":5}]},{},[7])
