@@ -2972,7 +2972,7 @@ function addXYMotionToDiv(x, y, $div) {
 
 function _addMotionToDiv(stream, $div, axis) {
     stream.onValue(function(val) {
-        $div.css("left", 100 + val + "px");
+        $div.css(axis, Math.round(val) + "px");
     });
 }
 
@@ -2994,7 +2994,7 @@ module.exports = {
 },{}],6:[function(require,module,exports){
 var bacon = require('baconjs');
 
-var timeStream = bacon.interval(10).map(function() {
+var timeStream = bacon.interval(Math.round(1000 / 60)).map(function() {
     return new Date().getTime();
 });
 
