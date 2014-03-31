@@ -14,7 +14,7 @@ function addXYMotionToDiv(x, y, $div) {
 
 function _addMotionToDiv(stream, $div, axis) {
     stream.onValue(function(val) {
-        $div.css("left", 100 + val + "px");
+        $div.css(axis, Math.round(val) + "px");
     });
 }
 
