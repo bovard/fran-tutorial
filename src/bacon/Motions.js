@@ -24,7 +24,7 @@ function addXMotionToDiv(x, $div) {
 
 
 function addYMotionToDiv(y, $div) {
-    _addMotionToDiv(y, $div, LEFT);
+    _addMotionToDiv(y, $div, TOP);
 }
 
 module.exports = {
