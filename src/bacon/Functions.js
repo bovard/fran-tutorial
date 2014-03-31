@@ -1,7 +1,7 @@
 
 var TimeStream = require('./TimeStream');
 var AMPLITUDE = 100;
-var PERIOD = 1000;
+var PERIOD = 250;
 
 function add(x, y) {
     return x + y;

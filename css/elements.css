@@ -1,16 +1,16 @@
 
 .entity {
     background: black;
-    height: 10px;
-    width: 10px;
+    height: 20px;
+    width: 20px;
     position: relative;
-    left: 90px;
+    left: 100px;
     top: 90px;
 }
 
 .container {
-    width: 210px;
-    height: 210px;
+    width: 220px;
+    height: 220px;
     border: 1px solid;
 }
 
